@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chegg Research</title>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<meta name="description" content="Chegg UX Research is working to make higher education more accessible, affordable, and achievable. We'd love to grab coffee and chat about our mission and team." />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<script>
+
+window.setInterval(setSuccessWord, 4000);
+
+function setSuccessWord() {
+
+    var el = document.getElementsByClassName('student-success-word')[0];
+
+    var currentWord = el.innerText;
+
+    if (!el.classList.contains('fade-out')) {
+        el.classList.add('fade-out');
+        window.setTimeout(toggleWord, 1500);
+    }
+
+    function toggleWord() {
+        if (currentWord === 'affordable') {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'accessible';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+
+            // window.setInterval(fadeInWord, 100);
+        } else if (currentWord === 'accessible') {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'achievable';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+        } else {
+            el.classList.add('hide');
+            el.classList.remove('fade-out');
+            el.innerText = 'affordable';
+            setTimeout(function() {
+                if (!el.classList.contains('fade-in')) {
+                    el.classList.add('fade-in');
+                    el.classList.remove('hide');
+                }
+            }, 100);
+
+            setTimeout(function() {
+                if (el.classList.contains('fade-in')) {
+                    el.classList.remove('fade-in');
+                }
+            }, 1300);
+        }
+    }
+}
+
+</script>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <header id="header-content">
+            <h1>We are designing more <span class="student-success-word">affordable</span> higher education.</span></h1>
+            <div class="outer-logo-wrapper">
+                <div class="inner-logo-wrapper">
+                    <img id="chegg-ux-logo" src="img/chegg-ux-logo.png" />
+                </div>
+            </div>
+            <div>
+
+            <div id="bg-overlay-container">
+              <div id="bg-overlay"></div>
+            </div>
+        </header>
+
+        <main>
+            <div id="employee-testimonials" class="section-header">
+                <h2>We love our mission &amp; team</h2>
+                <div id="testimonials-section">
+                    <div class="testimonial-portrait portrait-stewart">
+                        <div class="testimonial">
+                            <h4>Stewart McCoy</h4>
+                            <span>Product Designer</span>
+                            <p>&ldquo;The education space resonates with me because it affects so many people and has far-reaching implications for how we live our lives and the opportunities we have to realize our dreams.&rdquo;</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-portrait portrait-kyrie">
+                        <div class="testimonial">
+                            <h4>Kyrie Robinson</h4>
+                            <span>VP of User Experience</span>
+                            <p>&ldquo;It's part of the Chegg UX DNA to care about our teammates and to care about our students. Everything else flows from there.&rdquo;</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-portrait portrait-kaari">
+                        <div class="testimonial">
+                            <h4>Kaari Peterson</h4>
+                            <span>Director of User Research</span>
+                            <p>&ldquo;The people at Chegg value work/life balance and family-friendly workplaces. I can go to my daughter's basketball game or work from home if she's sick and not feel guilty.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="student-hub" class="section-header">
+                <h2 class="hub-section-title">High school students start their adventure with us</h2>
+                <h3 class="hub-section-subheader">It's a piece of cake to find the best college, get scholarships, and access on-demand online tutoring</h3>
+
+                <div class="hub-content">
+                    <div class="hub-slide-zero"></div>
+                    <div class="hub-slide-one"></div>
+                    <div class="hub-slide-two"></div>
+                    <div class="hub-slide-three"></div>
+                    <div class="hub-slide-four"></div>
+                    <div class="hub-slide-five"></div>
+                </div>
+            </div>
+
+            <div id="impact" class="section-header">
+                <h2>A snapshot of our impact on students' lives</h2>
+                <div id="impact-section">
+                    <div id="impact-stats">
+                        <div id="stat-careers" class="impact-stat">
+                            <div class="impact-content">
+                                <span>1.0 M</span>
+                                <p>Job &amp; Internship applications</p>
+                            </div>
+                        </div>
+
+                        <div id="stat-grades" class="impact-stat">
+                            <div class="impact-content">
+                                <span>90%</span>
+                                <p>Say Chegg Study raised their grades</p>
+                            </div>
+                        </div>
+
+                        <div id="stat-books" class="impact-stat">
+                            <div class="impact-content">
+                                <span>$250</span>
+                                <p>Average book savings per student</p>
+                            </div>
+                        </div>
+
+                        <div id="stat-students" class="impact-stat">
+                            <div class="impact-content">
+                                <span>7.5 M</span>
+                                <p>Active Chegg users in 2014</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="impact-tweets">
+                        <div id="first-impact-tweet" class="impact-tweet">
+                            <span class="twitter-logo"></span>
+                            <p class="tweet-content">&ldquo;I dont understand why anyone actually buys books from the book store. I just saved $600 using Chegg.&rdquo;</p>
+                            <div class="tweet-meta-data">
+                                <img src="img/tweet-alyssamtavares.jpg" class="twitter-picture" />
+                                <span class="twitter-username">@alyssamtavares</span>
+                            </div>
+                        </div>
+
+                        <div id="second-impact-tweet" class="impact-tweet">
+                            <span class="twitter-logo"></span>
+                            <p class="tweet-content">&ldquo;College tip: spend that extra ten bucks you have in your pocket on a chegg membership. It's like gold.&rdquo;</p>
+                            <div class="tweet-meta-data">
+                                <img src="img/tweet-sadieargus.jpg" class="twitter-picture" />
+                                <span class="twitter-username">@sadieargus</span>
+                            </div>
+                        </div>
+
+                        <div id="third-impact-tweet" class="impact-tweet">
+                            <span class="twitter-logo"></span>
+                            <p class="tweet-content">&ldquo;I definitely plan on thanking Chegg personally in my graduation speech.&rdquo;</p>
+                            <div class="tweet-meta-data">
+                                <img src="img/tweet-shwaaatson.jpg" class="twitter-picture" />
+                                <span class="twitter-username">@shwaaatson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="culture" class="section-header">
+                <h2>A peek inside the Chegg UX team</h2>
+                <div id="culture-section">
+                    <ul id="first-table-row">
+                        <li id="culture-shafeen" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-jennie" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-experience" class="cultural-stat">
+                            <div class="stat-content">
+                                <h4>Average Team Experience</h4>
+                                <p>13.3 Years</p>
+                            </div>
+                        </li>
+
+                        <li id="culture-twyla" class="culture-portrait">&nbsp;</li>
+                    </ul>
+
+                    <ul id="second-table-row">
+                        <li id="culture-mark" class="culture-portrait ">&nbsp;</li>
+
+                        <li id="culture-jenn" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-mike" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-rosa" class="culture-portrait">&nbsp;</li>
+                    </ul>
+
+                    <ul id="third-table-row">
+                        <li id="culture-kids" class="cultural-stat">
+                            <div class="stat-content">
+                                <h4>Total Chegg Mini-Me<span class="lowercase">s</span></h4>
+                                <p>26 Kids</p>
+                            </div>
+                        </li>
+
+                        <li id="culture-jen" class="culture-portrait">&nbsp;</li>
+
+                        <li id="culture-education" class="cultural-stat">
+                            <div class="stat-content">
+                                <h4>Total Team Education</h4>
+                                <p>3 BFAs, 6 masters, 1 MBA, and 3 PhDs</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="office-locations" class="section-header">
+                <h2>Our UX team is located around the world</h2>
+                <div id="locations-section">
+                    <div id="first-location" class="office-location">
+                        <p class="location-header">Santa Clara</p>
+                        <p id="headquarters">Headquarters</p>
+                        <div class="location-contact-info">
+                            <img src="img/office-hq.png" class="location-icon" />
+                            <address class="office-address">
+                                3990 Freedom Circle<br>
+                                Santa Clara, CA 95051<br>
+                                United States<br>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div id="second-location" class="office-location">
+                        <p class="location-header">San Francisco</p>
+                        <div class="location-contact-info">
+                            <img src="img/office-sf.png" class="location-icon" />
+                            <address class="office-address">
+                                301 Howard St., Suite 500<br>
+                                San Francisco, CA 95012<br>
+                                United States<br>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div id="third-location" class="office-location">
+                        <p class="location-header">Israel</p>
+                        <div class="location-contact-info">
+                            <img src="img/office-israel.png" class="location-icon" />
+                            <address class="office-address">
+                                Chaim Pekris 2<br>
+                                Park Hamada, Rehovot<br>
+                                Israel 7670202<br>
+                            </address>
+                        </div>
+                    </div>
+
+                    <div id="fourth-location" class="office-location">
+                        <p class="location-header">Ukraine</p>
+                        <div class="location-contact-info">
+                            <img src="img/office-ukraine.png" class="location-icon" />
+                            <address class="office-address">
+                                Zarichanska St 5/3<br>
+                                Khmelnytskyi City<br>
+                                Ukraine<br>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer-content" class="section-header">
+                <h2>Interested in joining our team? Let's chat.</h2>
+                <div id="header-buttons">
+                    <div>
+                        <a class="button header-button" href="http://www.chegg.com/jobs/listings">Open positions</a>
+                        <a class="button header-button" href="http://cheggdesign.wordpress.com/grab-coffee/">Grab Coffee</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+    (function() {
+      var height = document.body.clientHeight;
+      console.log(height);
+    })();
+    </script>
+</body>
+
+</html>
