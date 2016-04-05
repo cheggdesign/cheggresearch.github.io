@@ -28,17 +28,9 @@ body {
 
 /* Nav styles */
 
-#nav-bar {
-    background-color: transparent;
-    height: 50px;
-    position: relative;
-    width: 100%;
-    z-index: 2003;
-}
-
 #chegg-ux-logo {
     position: relative;
-    top: -240px;
+    top: -320px;
     z-index: 2004;
 
     -webkit-transform: scale(0.45);
@@ -48,39 +40,12 @@ body {
     transform: scale(0.45);
 }
 
-#nav-buttons {
-    float: right;
-    position: relative;
-    right: 20px;
-    top: -33px;
-}
-
-.button.nav-button {
-    background-color: #f07d00;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    font-family: AspiraLight;
-    padding: 8px;
-    width: 125px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-.button.nav-button.outline {
-    background-color: #fff;
-    border: 2px solid #f07d00;
-    box-shadow: none;
-    color: #f07d00;
-    padding: 6px;
-    margin-right: 8px;
-    text-shadow: none;
-    width: 125px;
-}
 
 /* Page styles */
 
 #container {
     background: url('../img/header-bg.jpg');
-    height: 750px;
+    height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -50px;
@@ -88,7 +53,7 @@ body {
 
 main {
     position: absolute;
-    top: 750px;
+    top: 550px;
     width: 100%;
 }
 
@@ -118,11 +83,32 @@ main div:first-child.section-header{
     font-size: 21px;
     line-height: 28px;
     margin: 0 auto;
-    padding-top: 300px;
+    padding-top: 200px;
     position: relative;
     text-align: center;
     width: 660px;
     z-index: 2001;
+}
+
+#header-content h3,
+#header-content p {
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 660px;
+    z-index: 2001;
+}
+
+#header-content h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+#header-content a {
+    color: #fff;
+    font-weight: 500;
 }
 
 .student-success-word {
@@ -183,10 +169,10 @@ main div:first-child.section-header{
 #bg-overlay {
     position: relative;
     background-color: rgba(51, 153, 153, 0.91);
-    height: 724px;
+    height: 524px;
     /*min-width: 960px;*/
     min-height: 100%;
-    top: -505px;
+    top: -492px;
     margin: 0 auto;
     width: 100%;
 }
@@ -324,6 +310,21 @@ main div:first-child.section-header{
     text-transform: uppercase;
 }
 
+/* Compensation */
+
+#compensation {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#compensation p {
+    color: #333333;
+    line-height: 1.6em;
+}
+
+#compensation strong {
+    font-weight: 700;
+}
 
 
 /* Office loations styles */
@@ -333,6 +334,7 @@ main div:first-child.section-header{
     background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 160px;
     margin-top: -120px;
     min-height: 700px;
 }
@@ -418,10 +420,6 @@ main div:first-child.section-header{
         line-height: 42px;
         padding-top: 153px;
         width: 100%;
-    }
-
-    #header-content #header-buttons {
-        top: -40px;
     }
 
     .student-success-word {
