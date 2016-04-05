@@ -9,88 +9,16 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-<script>
-
-window.setInterval(setSuccessWord, 4000);
-
-function setSuccessWord() {
-
-    var el = document.getElementsByClassName('student-success-word')[0];
-
-    var currentWord = el.innerText;
-
-    if (!el.classList.contains('fade-out')) {
-        el.classList.add('fade-out');
-        window.setTimeout(toggleWord, 1500);
-    }
-
-    function toggleWord() {
-        if (currentWord === 'affordable') {
-            el.classList.add('hide');
-            el.classList.remove('fade-out');
-            el.innerText = 'accessible';
-            setTimeout(function() {
-                if (!el.classList.contains('fade-in')) {
-                    el.classList.add('fade-in');
-                    el.classList.remove('hide');
-                }
-            }, 100);
-
-            setTimeout(function() {
-                if (el.classList.contains('fade-in')) {
-                    el.classList.remove('fade-in');
-                }
-            }, 1300);
-
-            // window.setInterval(fadeInWord, 100);
-        } else if (currentWord === 'accessible') {
-            el.classList.add('hide');
-            el.classList.remove('fade-out');
-            el.innerText = 'achievable';
-            setTimeout(function() {
-                if (!el.classList.contains('fade-in')) {
-                    el.classList.add('fade-in');
-                    el.classList.remove('hide');
-                }
-            }, 100);
-
-            setTimeout(function() {
-                if (el.classList.contains('fade-in')) {
-                    el.classList.remove('fade-in');
-                }
-            }, 1300);
-        } else {
-            el.classList.add('hide');
-            el.classList.remove('fade-out');
-            el.innerText = 'affordable';
-            setTimeout(function() {
-                if (!el.classList.contains('fade-in')) {
-                    el.classList.add('fade-in');
-                    el.classList.remove('hide');
-                }
-            }, 100);
-
-            setTimeout(function() {
-                if (el.classList.contains('fade-in')) {
-                    el.classList.remove('fade-in');
-                }
-            }, 1300);
-        }
-    }
-}
-
-</script>
-
 </head>
 
 <body>
     <div id="container">
 
         <header id="header-content">
-            <h1>We are designing more <span class="student-success-word">affordable</span> higher education.</span></h1>
+            <h1>Our guiding mission at Chegg is to help students Save Time, Save Money, &amp; Get Smarter. We conduct research to better understand our users and to improve our products. There are many types of users (including parents, high school students, and college students) located throughout the United States influencing our products through the feedback they provide in our studies.</h1>
             <div class="outer-logo-wrapper">
                 <div class="inner-logo-wrapper">
-                    <img id="chegg-ux-logo" src="img/chegg-ux-logo.png" />
+                    <img id="chegg-ux-logo" src="img/chegg-research-logo.png" />
                 </div>
             </div>
             <div>
@@ -102,162 +30,77 @@ function setSuccessWord() {
 
         <main>
             <div id="employee-testimonials" class="section-header">
-                <h2>We love our mission &amp; team</h2>
+                <h2>Meet our research team</h2>
                 <div id="testimonials-section">
-                    <div class="testimonial-portrait portrait-stewart">
-                        <div class="testimonial">
-                            <h4>Stewart McCoy</h4>
-                            <span>Product Designer</span>
-                            <p>&ldquo;The education space resonates with me because it affects so many people and has far-reaching implications for how we live our lives and the opportunities we have to realize our dreams.&rdquo;</p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-portrait portrait-kyrie">
-                        <div class="testimonial">
-                            <h4>Kyrie Robinson</h4>
-                            <span>VP of User Experience</span>
-                            <p>&ldquo;It's part of the Chegg UX DNA to care about our teammates and to care about our students. Everything else flows from there.&rdquo;</p>
-                        </div>
-                    </div>
-
                     <div class="testimonial-portrait portrait-kaari">
                         <div class="testimonial">
                             <h4>Kaari Peterson</h4>
                             <span>Director of User Research</span>
-                            <p>&ldquo;The people at Chegg value work/life balance and family-friendly workplaces. I can go to my daughter's basketball game or work from home if she's sick and not feel guilty.&rdquo;</p>
+                            <p><b>Education:</b>  Michigan State University, San Jose State University</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-portrait portrait-rosa">
+                        <div class="testimonial">
+                            <h4>Rosa Ren</h4>
+                            <span>Lead UX Researcher</span>
+                            <p>Education: UC Berkeley, Massachusetts Institute of Technology</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-portrait portrait-twyla">
+                        <div class="testimonial">
+                            <h4>Twyla Campbell, PhD</h4>
+                            <span>Senior UX Researcher</span>
+                            <p>Education:  University of Washington, Seattle Pacific University</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="testimonials-section">
+                    <div class="testimonial-portrait portrait-mark">
+                        <div class="testimonial">
+                            <h4>Mark Wehner</h4>
+                            <span>Principle UX Researcher</span>
+                            <p>Education: UC Davis, San Jose State University</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-portrait portrait-louise">
+                        <div class="testimonial">
+                            <h4>Louise Beryl, PhD</h4>
+                            <span>Senior UX Researcher</span>
+                            <p>Education: Columbia University, Princeton University</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-portrait portrait-nikita">
+                        <div class="testimonial">
+                            <h4>Nikita Doshi</h4>
+                            <span>UX Researcher</span>
+                            <p>Education: Syracuse University, University of Mumbai</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="student-hub" class="section-header">
-                <h2 class="hub-section-title">High school students start their adventure with us</h2>
-                <h3 class="hub-section-subheader">It's a piece of cake to find the best college, get scholarships, and access on-demand online tutoring</h3>
+            <div class="research-types section-header">
+                <h2>Types of research conducted at Chegg</h2>
+                <div>
+                    <ul>
+                        <li class="research-onsite research-detail"><span class="research-detail-header">Onsite</span> A user researcher might invite you to come to a Chegg office to ask you questions, show you something in development to get your feedback, etc. This type of study typically takes 1 hour.</li>
 
-                <div class="hub-content">
-                    <div class="hub-slide-zero"></div>
-                    <div class="hub-slide-one"></div>
-                    <div class="hub-slide-two"></div>
-                    <div class="hub-slide-three"></div>
-                    <div class="hub-slide-four"></div>
-                    <div class="hub-slide-five"></div>
-                </div>
-            </div>
+                        <li class="research-remote research-detail"><span class="research-detail-header">Remote</span> A user researcher might invite you to a phone call/web conference with screen sharing in order to walk through new designs with you, see how you use things currently, etc. (note: this requires an internet connection). This type of study typically takes 1&ndash;2 hours.</li>
 
-            <div id="impact" class="section-header">
-                <h2>A snapshot of our impact on students' lives</h2>
-                <div id="impact-section">
-                    <div id="impact-stats">
-                        <div id="stat-careers" class="impact-stat">
-                            <div class="impact-content">
-                                <span>1.0 M</span>
-                                <p>Job &amp; Internship applications</p>
-                            </div>
-                        </div>
+                        <li class="research-field research-detail"><span class="research-detail-header">Field study</span> Our user researchers might come and visit you in your home/office. This type of study typically takes 1&ndash;2 hours.</li>
 
-                        <div id="stat-grades" class="impact-stat">
-                            <div class="impact-content">
-                                <span>90%</span>
-                                <p>Say Chegg Study raised their grades</p>
-                            </div>
-                        </div>
-
-                        <div id="stat-books" class="impact-stat">
-                            <div class="impact-content">
-                                <span>$250</span>
-                                <p>Average book savings per student</p>
-                            </div>
-                        </div>
-
-                        <div id="stat-students" class="impact-stat">
-                            <div class="impact-content">
-                                <span>7.5 M</span>
-                                <p>Active Chegg users in 2014</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="impact-tweets">
-                        <div id="first-impact-tweet" class="impact-tweet">
-                            <span class="twitter-logo"></span>
-                            <p class="tweet-content">&ldquo;I dont understand why anyone actually buys books from the book store. I just saved $600 using Chegg.&rdquo;</p>
-                            <div class="tweet-meta-data">
-                                <img src="img/tweet-alyssamtavares.jpg" class="twitter-picture" />
-                                <span class="twitter-username">@alyssamtavares</span>
-                            </div>
-                        </div>
-
-                        <div id="second-impact-tweet" class="impact-tweet">
-                            <span class="twitter-logo"></span>
-                            <p class="tweet-content">&ldquo;College tip: spend that extra ten bucks you have in your pocket on a chegg membership. It's like gold.&rdquo;</p>
-                            <div class="tweet-meta-data">
-                                <img src="img/tweet-sadieargus.jpg" class="twitter-picture" />
-                                <span class="twitter-username">@sadieargus</span>
-                            </div>
-                        </div>
-
-                        <div id="third-impact-tweet" class="impact-tweet">
-                            <span class="twitter-logo"></span>
-                            <p class="tweet-content">&ldquo;I definitely plan on thanking Chegg personally in my graduation speech.&rdquo;</p>
-                            <div class="tweet-meta-data">
-                                <img src="img/tweet-shwaaatson.jpg" class="twitter-picture" />
-                                <span class="twitter-username">@shwaaatson</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="culture" class="section-header">
-                <h2>A peek inside the Chegg UX team</h2>
-                <div id="culture-section">
-                    <ul id="first-table-row">
-                        <li id="culture-shafeen" class="culture-portrait">&nbsp;</li>
-
-                        <li id="culture-jennie" class="culture-portrait">&nbsp;</li>
-
-                        <li id="culture-experience" class="cultural-stat">
-                            <div class="stat-content">
-                                <h4>Average Team Experience</h4>
-                                <p>13.3 Years</p>
-                            </div>
-                        </li>
-
-                        <li id="culture-twyla" class="culture-portrait">&nbsp;</li>
-                    </ul>
-
-                    <ul id="second-table-row">
-                        <li id="culture-mark" class="culture-portrait ">&nbsp;</li>
-
-                        <li id="culture-jenn" class="culture-portrait">&nbsp;</li>
-
-                        <li id="culture-mike" class="culture-portrait">&nbsp;</li>
-
-                        <li id="culture-rosa" class="culture-portrait">&nbsp;</li>
-                    </ul>
-
-                    <ul id="third-table-row">
-                        <li id="culture-kids" class="cultural-stat">
-                            <div class="stat-content">
-                                <h4>Total Chegg Mini-Me<span class="lowercase">s</span></h4>
-                                <p>26 Kids</p>
-                            </div>
-                        </li>
-
-                        <li id="culture-jen" class="culture-portrait">&nbsp;</li>
-
-                        <li id="culture-education" class="cultural-stat">
-                            <div class="stat-content">
-                                <h4>Total Team Education</h4>
-                                <p>3 BFAs, 6 masters, 1 MBA, and 3 PhDs</p>
-                            </div>
-                        </li>
+                        <li class="research-survey research-detail"><span class="research-detail-header">Survey</span> You might be invited to answer a short questionnaire to help improve our products. This typically takes 5&ndash;10 minutes.</li>
                     </ul>
                 </div>
             </div>
 
             <div id="office-locations" class="section-header">
-                <h2>Our UX team is located around the world</h2>
+                <h2>Our offices are located around the world</h2>
                 <div id="locations-section">
                     <div id="first-location" class="office-location">
                         <p class="location-header">Santa Clara</p>
@@ -309,26 +152,8 @@ function setSuccessWord() {
                     </div>
                 </div>
             </div>
-
-            <footer id="footer-content" class="section-header">
-                <h2>Interested in joining our team? Let's chat.</h2>
-                <div id="header-buttons">
-                    <div>
-                        <a class="button header-button" href="http://www.chegg.com/jobs/listings">Open positions</a>
-                        <a class="button header-button" href="http://cheggdesign.wordpress.com/grab-coffee/">Grab Coffee</a>
-                    </div>
-                </div>
-            </footer>
         </main>
     </div>
-
-    <script src="js/scripts.js"></script>
-    <script>
-    (function() {
-      var height = document.body.clientHeight;
-      console.log(height);
-    })();
-    </script>
 </body>
 
 </html>
