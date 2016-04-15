@@ -30,7 +30,7 @@ body {
 
 #chegg-ux-logo {
     position: relative;
-    top: -320px;
+    top: -380px;
     z-index: 2004;
 
     -webkit-transform: scale(0.45);
@@ -45,7 +45,7 @@ body {
 
 #container {
     background: url('../img/header-bg.jpg');
-    height: 550px;
+    height: 595px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -50px;
@@ -103,12 +103,20 @@ main div:first-child.section-header{
 #header-content h3 {
     font-size: 19px;
     margin-bottom: 15px;
-    margin-top: 40px;
 }
 
 #header-content a {
     color: #fff;
     font-weight: 500;
+}
+
+.header-cta {
+    border: 2px solid white;
+    position: relative;
+    margin: 40px auto 0 auto;
+    width: 660px;
+    z-index: 2001;
+    padding: 20px;
 }
 
 .student-success-word {
@@ -169,10 +177,10 @@ main div:first-child.section-header{
 #bg-overlay {
     position: relative;
     background-color: rgba(51, 153, 153, 0.91);
-    height: 524px;
+    height: 550px;
     /*min-width: 960px;*/
     min-height: 100%;
-    top: -492px;
+    top: -518px;
     margin: 0 auto;
     width: 100%;
 }
@@ -238,13 +246,22 @@ main div:first-child.section-header{
     background-position: center 0% 0%;
     background-size: 112%;
     background-repeat: no-repeat;
-    border-right: 5px solid #fff;
 }
 
 .portrait-kaari {
     background: url('../img/portrait-kaari.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.portrait-dana {
+    background: url('../img/portrait-dana.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portrait-dana .testimonial {
+    min-width: 258px;
 }
 
 .portrait-twyla {
@@ -269,6 +286,26 @@ main div:first-child.section-header{
     background: url('../img/portrait-louise.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.coordinator-info {
+    background-color: #5C90C7;
+    height: 541px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    width: 639px;
+}
+
+.coordinator-info p {
+    color: white;
+    font-family: Aspira;
+    line-height: 1.2em;
+    padding: 200px 40px;
+}
+
+.coordinator-info span {
+    display: block;
+    margin-top: 40px;
 }
 
 
