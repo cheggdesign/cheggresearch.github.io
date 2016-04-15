@@ -313,7 +313,7 @@ main div:first-child.section-header{
 
 .research-types {
     margin: 0 auto;
-    min-height: 700px;
+    min-height: 500px;
     width: 960px;
 }
 
@@ -364,6 +364,33 @@ main div:first-child.section-header{
 }
 
 
+/* Footer styles */
+
+.footer-cta {
+    background-color: #2CAEA6;
+    color: white;
+    font-family: Aspira;
+    line-height: 1.2em;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0.94;
+    width: 660px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+}
+
+.footer-cta h3 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.footer-cta a {
+    color: white;
+}
+
+
 /* Office loations styles */
 
 #office-locations {
@@ -371,64 +398,9 @@ main div:first-child.section-header{
     background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 160px;
-    margin-top: -120px;
     min-height: 700px;
 }
 
-#office-locations h2 {
-    position: relative;
-    top: -160px;
-}
-
-#locations-section {
-    display: table;
-    margin: 0 auto;
-    max-width: 960px;
-}
-
-.office-location {
-    background-color: rgba(51, 153, 153, 0.8);
-    color: #fff;
-    float: left;
-    margin-right: 10px;
-    min-height: 486px;
-    min-width: 230px;
-    position: relative;
-}
-
-.location-header {
-    font-family: AspiraDemi;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    padding-top: 80px;
-    text-transform: uppercase;
-}
-
-#first-location .location-icon {
-    padding-top: 30px;
-}
-
-.location-icon {
-    padding-top: 40px;
-}
-
-#headquarters {
-    font-family: AspiraLight;
-    font-size: 10px;
-    letter-spacing: 1px;
-    line-height: 12px;
-    text-transform: uppercase;
-}
-
-.office-address {
-    font-family: AspiraLight;
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 19px;
-    margin-top: 40px;
-}
 
 
 /* Mobile styles */
