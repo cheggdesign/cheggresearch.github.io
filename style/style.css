@@ -33,11 +33,11 @@ body {
     top: -380px;
     z-index: 2004;
 
-    -webkit-transform: scale(0.45);
-    -moz-transform: scale(0.45);
-    -ms-transform: scale(0.45);
-    -o-transform: scale(0.45);
-    transform: scale(0.45);
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    transform: scale(0.6);
 }
 
 
