@@ -198,6 +198,10 @@ main div:first-child.section-header{
 
 /* Employee testimonials styles */
 
+#employee-testimonials {
+    clear: both;
+}
+
 #testimonials-section {
     display: table;
     empty-cells: show;
@@ -293,12 +297,13 @@ main div:first-child.section-header{
     height: 541px;
     margin-bottom: 1px;
     margin-left: 1px;
-    width: 639px;
+    width: 100%;
 }
 
 .coordinator-info p {
     color: white;
     font-family: Aspira;
+    font-size: 21px;
     line-height: 1.2em;
     padding: 200px 40px;
 }
@@ -332,8 +337,9 @@ main div:first-child.section-header{
     border: 1px solid #eee;
     height: 100%;
     float: left;
+    font-size: 18px;
     margin-right: 12px;
-    min-height: 250px;
+    min-height: 335px;
     padding: 20px 12px;
     width: 200px;
 }
@@ -354,9 +360,29 @@ main div:first-child.section-header{
     width: 960px;
 }
 
+.compensation-visual {
+    background-color: #4DC66D;
+    float: left;
+    margin-right: 40px;
+    height: 200px;
+    width: 200px;
+}
+
+.compensation-visual span {
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: Aspira;
+    position: relative;
+    top: 36%;
+    transform: translateY(-50%);
+}
+
 #compensation p {
     color: #333333;
+    font-size: 21px;
     line-height: 1.6em;
+    text-align: left;
 }
 
 #compensation strong {
@@ -376,7 +402,7 @@ main div:first-child.section-header{
     opacity: 0.94;
     width: 660px;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     position: relative;
     top: 300px;
 }
@@ -398,7 +424,21 @@ main div:first-child.section-header{
     background-position: center 85%;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 100px;
     min-height: 700px;
+}
+
+
+
+/* Privacy styles */
+
+#privacy {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+#privacy a {
+    color: #5C90C7;
 }
 
 
